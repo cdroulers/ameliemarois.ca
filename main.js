@@ -52,7 +52,7 @@ function main() {
   let link = canvas.selectAll(".link");
   let node = canvas.selectAll(".node");
 
-  d3.json("oeuvres1.json", function(error, json) {
+  d3.json("oeuvres.json", function(error, json) {
     if (error) throw error;
     root = json;
     update();
@@ -71,7 +71,7 @@ function main() {
       .links(links)
       .start();
 
-    // Update the links…
+    // Update the links
     link = link.data(links, d => d.target.id);
 
     // Exit any old links.
@@ -86,7 +86,7 @@ function main() {
           .attr("x2", d => d.target.x)
           .attr("y2", d => d.target.y);
 
-    // Update the nodes…
+    // Update the nodes
     node = node.data(nodes, d => d.id).style("fill", color);
 
     // Exit any old nodes.

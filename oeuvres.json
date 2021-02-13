@@ -14,37 +14,37 @@
           "titre": "Ferdinand",
           "year": 1999,
           "size": 200,
-          "img": "Ferdinand.jpg"
+          "img": "/images/Ferdinand.jpg"
         },
         {
           "titre": "Coureur",
           "year": 1999,
           "size": 200,
-          "img": "Coureur.jpg"
+          "img": "/images/Coureur.jpg"
         },
         {
           "titre": "Anna",
           "year": 1999,
           "size": 200,
-          "img": "Anna.jpg"
+          "img": "/images/Anna.jpg"
         },
         {
           "titre": "Poubelle",
           "year": 1999,
           "size": 200,
-          "img": "Fogg.jpg"
+          "img": "/images/Fogg.jpg"
         },
         {
           "titre": "Marika",
           "year": 1999,
           "size": 200,
-          "img": "Marika.jpg"
+          "img": "/images/Marika.jpg"
         },
         {
           "titre": "Alexandre",
           "year": 1999,
           "size": 200,
-          "img": "Alexandre.jpg"
+          "img": "/images/Alexandre.jpg"
         }
       ]
     },
@@ -61,7 +61,7 @@
           "titre": "Coeur",
           "year": 2004,
           "size": 200,
-          "img": "Coeur.jpg"
+          "img": "/images/Coeur.jpg"
         },
         {
           "titre": "Poussin",
@@ -73,7 +73,7 @@
           "titre": "Andrée-Anne",
           "year": 2006,
           "size": 100,
-          "img": "Andree-Anne.jpg"
+          "img": "/images/Andree-Anne.jpg"
         },
         {
           "titre": "Montagne",
@@ -132,19 +132,19 @@
           "titre": "Amélie",
           "year": 2017,
           "size": 100,
-          "img": "Amelie.jpg"
+          "img": "/images/Amelie.jpg"
         },
         {
           "titre": "Amélie & Philippe",
           "year": 2016,
           "size": 500,
-          "img": "Amelie_Philippe.jpg"
+          "img": "/images/Amelie_Philippe.jpg"
         },
         {
           "titre": "Fleuve",
           "year": 2019,
           "size": 100,
-          "img": "Fleuve.jpg"
+          "img": "/images/Fleuve.jpg"
         },
         {
           "titre": "Gabriel, Julie & Sylvie",
@@ -156,19 +156,19 @@
           "titre": "Coin-Coin",
           "year": 2019,
           "size": 200,
-          "img": "Coin-Coin.jpg"
+          "img": "/images/Coin-Coin.jpg"
         },
         {
           "titre": "Chaussons",
           "year": 2019,
           "size": 50,
-          "img": "Chausson.jpg"
+          "img": "/images/Chausson.jpg"
         },
         {
           "titre": "Archive",
           "year": 2019,
           "size": 100,
-          "img": "Archive.jpg"
+          "img": "/images/Archive.jpg"
         }
       ]
     },
@@ -239,7 +239,7 @@
           "titre": "Ernestine",
           "year": 2009,
           "size": 950,
-          "img": "Ernestine.jpg"
+          "img": "/images/Ernestine.jpg"
         },
         {
           "titre": "Océane",
@@ -274,19 +274,19 @@
           "titre": "Chaise de dépression",
           "year": 2016,
           "size": 950,
-          "img": "Chaise_depression.jpg"
+          "img": "/images/Chaise_depression.jpg"
         },
         {
           "titre": "Chaise d'adulte",
           "year": 2016,
           "size": 250,
-          "img": "Chaise_adulte.jpg"
+          "img": "/images/Chaise_adulte.jpg"
         },
         {
           "titre": "Chaise d'enfance",
           "year": 2016,
           "size": 250,
-          "img": "Chaise_enfance.jpg"
+          "img": "/images/Chaise_enfance.jpg"
         },
         {
           "titre": "Mémoire",
@@ -342,7 +342,7 @@
               "titre": "Compostelle",
               "year": 2015,
               "size": 0,
-              "img": "Compostelle.jpg"
+              "img": "/images/Compostelle.jpg"
             },
             {
               "titre": "Geppetto",
