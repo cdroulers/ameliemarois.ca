@@ -1,0 +1,358 @@
+{
+  "titre": "Moi",
+  "children": [
+    {
+      "titre": "photo",
+      "children": [
+        {
+          "titre": "Introspection",
+          "year": 2017,
+          "size": 100,
+          "img": "/images/Introspection.jpg"
+        },
+        {
+          "titre": "Ferdinand",
+          "year": 1999,
+          "size": 200,
+          "img": "Ferdinand.jpg"
+        },
+        {
+          "titre": "Coureur",
+          "year": 1999,
+          "size": 200,
+          "img": "Coureur.jpg"
+        },
+        {
+          "titre": "Anna",
+          "year": 1999,
+          "size": 200,
+          "img": "Anna.jpg"
+        },
+        {
+          "titre": "Poubelle",
+          "year": 1999,
+          "size": 200,
+          "img": "Fogg.jpg"
+        },
+        {
+          "titre": "Marika",
+          "year": 1999,
+          "size": 200,
+          "img": "Marika.jpg"
+        },
+        {
+          "titre": "Alexandre",
+          "year": 1999,
+          "size": 200,
+          "img": "Alexandre.jpg"
+        }
+      ]
+    },
+    {
+      "titre": "peinture",
+      "children": [
+        {
+          "titre": "Regard",
+          "year": 2006,
+          "size": 0,
+          "img": "/images/Regard.jpg"
+        },
+        {
+          "titre": "Coeur",
+          "year": 2004,
+          "size": 200,
+          "img": "Coeur.jpg"
+        },
+        {
+          "titre": "Poussin",
+          "year": 2012,
+          "size": 450,
+          "img": "/images/Poussin.jpg"
+        },
+        {
+          "titre": "Andrée-Anne",
+          "year": 2006,
+          "size": 100,
+          "img": "Andree-Anne.jpg"
+        },
+        {
+          "titre": "Montagne",
+          "year": 2006,
+          "size": 300,
+          "img": "/images/Montagne.jpg"
+        },
+        {
+          "titre": "Grand singe",
+          "year": 2015,
+          "size": 500,
+          "img": "/images/Grand_singe.jpg"
+        }
+      ]
+    },
+    {
+      "titre": "couture",
+      "children": [
+        {
+          "titre": "L'amante religieuse",
+          "year": 2003,
+          "size": 200,
+          "img": "/images/LAmante_Religieuse.jpg"
+        },
+        {
+          "titre": "Poche",
+          "year": 2007,
+          "size": 100,
+          "img": "/images/Poche.jpg"
+        },
+        {
+          "titre": "Médailles",
+          "year": 2016,
+          "size": 250,
+          "img": "/images/Medailles.jpg"
+        },
+        {
+          "titre": "Linge à vaisselle",
+          "year": 2016,
+          "size": 50,
+          "img": "/images/Linge_vaisselle.jpg"
+        },
+        {
+          "titre": "Paysage",
+          "year": 2015,
+          "size": 500,
+          "img": "/images/Paysage.jpg"
+        },
+        {
+          "titre": "Robert",
+          "year": 2018,
+          "size": 0,
+          "img": "/images/Robert.jpg"
+        },
+        {
+          "titre": "Amélie",
+          "year": 2017,
+          "size": 100,
+          "img": "Amelie.jpg"
+        },
+        {
+          "titre": "Amélie & Philippe",
+          "year": 2016,
+          "size": 500,
+          "img": "Amelie_Philippe.jpg"
+        },
+        {
+          "titre": "Fleuve",
+          "year": 2019,
+          "size": 100,
+          "img": "Fleuve.jpg"
+        },
+        {
+          "titre": "Gabriel, Julie & Sylvie",
+          "year": 2019,
+          "size": 200,
+          "img": "/images/Gabriel_Julie_Sylvie.jpg"
+        },
+        {
+          "titre": "Coin-Coin",
+          "year": 2019,
+          "size": 200,
+          "img": "Coin-Coin.jpg"
+        },
+        {
+          "titre": "Chaussons",
+          "year": 2019,
+          "size": 50,
+          "img": "Chausson.jpg"
+        },
+        {
+          "titre": "Archive",
+          "year": 2019,
+          "size": 100,
+          "img": "Archive.jpg"
+        }
+      ]
+    },
+    {
+      "titre": "vitrail",
+      "children": [
+        {
+          "titre": "Tout ce dont j'ai besoin",
+          "year": 2007,
+          "size": 0,
+          "img": "/images/Tout_ce_dont_j_ai_besoin.jpg"
+        },
+        {
+          "titre": "Autre que toi",
+          "year": 2007,
+          "size": 0,
+          "img": "/images/Autre_que_toi.jpg"
+        },
+        {
+          "titre": "Corset",
+          "year": 2007,
+          "size": 500,
+          "img": "/images/Corset.jpg"
+        },
+        {
+          "titre": "Maternité",
+          "year": 2005,
+          "size": 0,
+          "img": "/images/Maternite.jpg"
+        },
+        {
+          "titre": "Tiffany",
+          "year": 2015,
+          "size": 1500,
+          "img": "/images/Tiffany.jpg"
+        },
+        {
+          "titre": "Gaby",
+          "year": 2009,
+          "size": 950,
+          "img": "/images/Gaby.jpg"
+        },
+        {
+          "titre": "Jeanette",
+          "year": 2009,
+          "size": 950,
+          "img": "/images/Jeanette.jpg"
+        },
+        {
+          "titre": "Louise",
+          "year": 2009,
+          "size": 950,
+          "img": "/images/Louise.jpg"
+        },
+        {
+          "titre": "Taïs",
+          "year": 2009,
+          "size": 950,
+          "img": "/images/Tais.jpg"
+        },
+        {
+          "titre": "Mc Beal",
+          "year": 2009,
+          "size": 950,
+          "img": "/images/Mc-Beal.jpg"
+        },
+        {
+          "titre": "Ernestine",
+          "year": 2009,
+          "size": 950,
+          "img": "Ernestine.jpg"
+        },
+        {
+          "titre": "Océane",
+          "year": 2009,
+          "size": 950,
+          "img": "/images/Oceane.jpg"
+        },
+        {
+          "titre": "Sophie",
+          "year": 2009,
+          "size": 950,
+          "img": "/images/Sophie.jpg"
+        },
+        {
+          "titre": "Giovana",
+          "year": 2009,
+          "size": 950,
+          "img": "/images/Giovana.jpg"
+        }
+      ]
+    },
+    {
+      "titre": "objet",
+      "children": [
+        {
+          "titre": "Été 1",
+          "year": 2017,
+          "size": 0,
+          "img": "/images/Été 1.jpg"
+        },
+        {
+          "titre": "Chaise de dépression",
+          "year": 2016,
+          "size": 950,
+          "img": "Chaise_depression.jpg"
+        },
+        {
+          "titre": "Chaise d'adulte",
+          "year": 2016,
+          "size": 250,
+          "img": "Chaise_adulte.jpg"
+        },
+        {
+          "titre": "Chaise d'enfance",
+          "year": 2016,
+          "size": 250,
+          "img": "Chaise_enfance.jpg"
+        },
+        {
+          "titre": "Mémoire",
+          "year": 2015,
+          "size": 0,
+          "img": "/images/Memoire.jpg"
+        },
+        {
+          "titre": "Pauline_Julien",
+          "year": 2019,
+          "size": 500,
+          "img": "/images/Pauline_Julien.jpg"
+        },
+        {
+          "titre": "installation",
+          "children": [
+            {
+              "titre": "Studio Chicago",
+              "year": 2019,
+              "size": 0,
+              "img": "/images/Studio_Chicago_detail1.jpg"
+            },
+            {
+              "titre": "Studio Chicago",
+              "year": 2019,
+              "size": 0,
+              "img": "/images/Studio_Chicago_detail2.jpg"
+            },
+            {
+              "titre": "Studio Chicago",
+              "year": 2019,
+              "size": 0,
+              "img": "/images/Studio_Chicago_detail3.jpg"
+            },
+            {
+              "titre": "Studio Chicago",
+              "year": 2019,
+              "size": 0,
+              "img": "/images/Studio_Chicago_detail4.jpg"
+            },
+            {
+              "titre": "Studio Chicago",
+              "year": 2019,
+              "size": 0,
+              "img": "/images/Studio_Chicago_detail5.jpg"
+            }
+          ]
+        },
+        {
+          "titre": "dessin",
+          "children": [
+            {
+              "titre": "Compostelle",
+              "year": 2015,
+              "size": 0,
+              "img": "Compostelle.jpg"
+            },
+            {
+              "titre": "Geppetto",
+              "year": 2019,
+              "size": 50,
+              "img": "/images/Geppetto.jpg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
