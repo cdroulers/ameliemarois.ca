@@ -1,8 +1,4 @@
 // Amelie Official Title: Reverse Engineer
-const startingWidth =
-  innerWidth / 1 || document.documentElement.clientWidth / 1 || document.body.clientWidth / 1;
-const startingHeight =
-  innerHeight / 1 || document.documentElement.clientHeight / 1 || document.body.clientHeight / 1;
 
 d3.select(window).on("resize", main);
 
@@ -23,6 +19,7 @@ function responsiveReposition() {
   d3.select("svg").attr("width", currentWidth).attr("height", currentHeight);
 }
 
+registerHandlers();
 main();
 
 function main() {
@@ -30,6 +27,7 @@ function main() {
   if (!svgtest.empty()) {
     svgtest.remove();
   }
+
   let width =
     innerWidth / 1 || document.documentElement.clientWidth / 1 || document.body.clientWidth / 1;
 
@@ -41,8 +39,8 @@ function main() {
   let canvas = d3
     .select("body")
     .append("svg")
-    .attr("width", width)
-    .attr("height", height)
+    .attr("width", width - 10)
+    .attr("height", height - 10)
     .append("g")
     .style("transform", "translate(0, 0)");
 
@@ -164,13 +162,16 @@ function main() {
 
   // Toggle children on click.
   function toggleChildren(d) {
-    d3.select("image")
-      .attr(
-        "transform",
-        "translate(" + d.x + "," + (d.y - 5 - (d.children ? 3.5 : Math.sqrt(d.size) / 2)) + ")"
-      )
-      .attr("xlink:href", d.img)
-      .style("display", null);
+    dialog.attr("open", true);
+    var title = d.titre;
+    if (d.year) {
+      title += " (" + d.year + ")";
+    }
+    dialog.select("dialog h1 .title").html(title);
+    var content = dialog.select("dialog .content").html("");
+    if (d.img) {
+      content.append("img").attr("src", d.img);
+    }
     // if (d.children) {
     //  d._children = d.children;
     // d.children = null;
@@ -178,7 +179,7 @@ function main() {
     //d.children = d._children;
     //d._children = null;
     //}
-    update();
+    //update();
   }
 
   // Returns a list of all nodes under the root.
@@ -195,4 +196,13 @@ function main() {
     recurse(root);
     return nodes;
   }
+}
+
+var dialog = d3.select("dialog");
+
+function registerHandlers() {
+  d3.select("dialog a.close").on("click", function (e) {
+    d3.event.preventDefault();
+    dialog.attr("open", null);
+  });
 }
