@@ -5,37 +5,41 @@
 }
 
 body {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   background-color: #131e29;
 }
 
 .site-title {
   opacity: 0;
-  animation: title-fade 1s .25s;
+  animation: title-fade 1s 0.25s;
   animation-fill-mode: forwards;
   font-weight: 200;
   font-size: 9vmin;
-  color:#f1d1a8;
-  padding: .25em .5em;
+  color: #f1d1a8;
+  padding: 0.25em 0.5em;
   position: absolute;
   top: 0;
   left: 0;
 }
 
 @keyframes title-fade {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .node {
-  cursor:pointer;
+  cursor: pointer;
   position: absolute;
   z-index: 0;
 }
 
 .link {
   fill: none;
-  stroke:black;
+  stroke: black;
   stroke-width: 1px;
 }
 
@@ -45,5 +49,5 @@ body {
 
 .hovertxt {
   font-size: 1.25rem;
-  fill:#f1d1a8;
+  fill: #f1d1a8;
 }
