@@ -1,4 +1,4 @@
-d3.json("../../oeuvres.json").then(function (json) {
+d3.json("oeuvres.json").then(function (json) {
   main(d3, json, 500, 500, drag(d3), Promise.resolve());
 });
 
@@ -25,9 +25,6 @@ function main(d3, data, width, height, drag, invalidation) {
           var targetCount = d.target.children ? d.target.children.length : 0;
           //sourceCount += d.source.data.children ? d.source.data.children.length * 3 : 0;
           targetCount += d.target.data.children ? d.target.data.children.length * 10 : 0;
-          if (d.source.data.children) {
-            console.log(d.source.data, d.target.data);
-          }
           var sourceSize = Math.sqrt(d.source.data.size) / 5 || 2;
           var targetSize = Math.sqrt(d.target.data.size) / 5 || 2;
 
