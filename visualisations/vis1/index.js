@@ -1,5 +1,5 @@
 d3.json("oeuvres.json").then(function (json) {
-  main(d3, json, 500, 500, drag(d3), Promise.resolve());
+  main(d3, json, 500, 500, drag(d3));
 });
 
 // Present in HTML.
@@ -8,7 +8,7 @@ registerHandlers();
 
 var text = null;
 
-function main(d3, data, width, height, drag, invalidation) {
+function main(d3, data, width, height, drag) {
   const root = d3.hierarchy(data);
   const links = root.links();
   const nodes = root.descendants();
@@ -72,8 +72,6 @@ function main(d3, data, width, height, drag, invalidation) {
 
     node.attr("cx", (d) => d.x).attr("cy", (d) => d.y);
   });
-
-  invalidation.then(() => simulation.stop());
 
   text = svg.append("svg:text").attr("class", "hovertxt");
   document.body.appendChild(svg.node());
