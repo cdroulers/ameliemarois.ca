@@ -49,7 +49,7 @@ function main(d3, data, width, height, drag) {
         })
         .strength(1.5)
     )
-    .force("charge", d3.forceManyBody().strength(-50))
+    .force("charge", d3.forceManyBody().strength(-100))
     .force("x", d3.forceX())
     .force("y", d3.forceY());
 
