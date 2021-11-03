@@ -1,9 +1,26 @@
-d3.json("oeuvres.json").then(function (json) {
-  main(d3, json, 500, 500, drag(d3));
-});
-
 // Present in HTML.
 var dialog = d3.select("dialog");
+var visualization = document.querySelector("main");
+
+d3.json("oeuvres.json").then(function (json) {
+  var child = null;
+  function displayVisualization() {
+    if (child) {
+      visualization.removeChild(child);
+    }
+    var size = Math.min(visualization.clientWidth, visualization.clientHeight);
+    child = main(d3, json, size, size, drag(d3));
+  }
+
+  var resizeTimeout;
+  window.addEventListener("resize", function () {
+    clearTimeout(resizeTimeout);
+    resizeTimeout = setTimeout(displayVisualization, 500);
+  });
+
+  displayVisualization();
+});
+
 registerHandlers();
 
 var text = null;
@@ -36,7 +53,9 @@ function main(d3, data, width, height, drag) {
     .force("x", d3.forceX())
     .force("y", d3.forceY());
 
-  const svg = d3.create("svg").attr("viewBox", [-width / 2, -height / 2, width, height]);
+  const svg = d3
+    .create("svg")
+    .attr("viewBox", [-width / 5, -height / 5, width / 2.5, height / 2.5]);
 
   const link = svg
     .append("g")
@@ -74,7 +93,7 @@ function main(d3, data, width, height, drag) {
   });
 
   text = svg.append("svg:text").attr("class", "hovertxt");
-  document.body.appendChild(svg.node());
+  return visualization.appendChild(svg.node());
 }
 
 function showText(e, d) {
@@ -96,7 +115,7 @@ function showImage(e, d) {
   if (d.year) {
     title += " (" + d.year + ")";
   }
-  dialog.select("dialog h1 .title").html(title);
+  dialog.select("dialog .title").html(title);
   var content = dialog.select("dialog .content").html("");
   if (d.img) {
     content.append("img").attr("src", d.img);

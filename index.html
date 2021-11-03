@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>Amélie Marois</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.css" />
     <link rel="stylesheet" href="styles/main.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
@@ -12,18 +13,21 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.5.0/d3.min.js"></script>
   </head>
   <body>
-    <header>
-      <h1 class="site-title">Amélie Marois</h1>
-    </header>
+    <section id="container">
+      <header>
+        <h1 class="site-title">Amélie Marois</h1>
+      </header>
 
-    <dialog class="fixed">
-      <h1>
-        <span class="title"></span>
-        <a href="#" class="close">×</a>
-      </h1>
-      <section class="content"></section>
-    </dialog>
+      <main></main>
 
+      <dialog class="fixed">
+        <h2>
+          <span class="title"></span>
+          <a href="#" class="close">×</a>
+        </h2>
+        <section class="content"></section>
+      </dialog>
+    </section>
     <script src="main.js"></script>
   </body>
 </html>
