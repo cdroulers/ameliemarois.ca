@@ -1,5 +1,18 @@
 # ameliemarois.ca
 
+## How to install and develop
+
+- Install VS Code
+- Install git and configure git
+  - Install (for your OS)
+  - git config --global user.name "First Last name"
+  - git config --global user.email "email@example.org"
+  - git config --global pull.rebase false
+- Clone the repo in VS Code
+  - Command palette (ctrl+shifT+esc), clone
+  - Paste URL: https://github.com/cdroulers/ameliemarois.ca.git
+- Use "Go Live" extension to start local server!
+
 ## Description quick
 
 À propos des images, mon objectif serait de faire apparaître celle-ci en plein écran avec un clic (puisqu'un mouseover n'est pas utile sur un appareil mobile) et la faire disparaître avec le clic suivant. Si c'était possible qu'elle soit translucide un moment en transitions ce serait encore mieux! Je pensais ajouter des textes sur les bulles noires de catégories en .jpg pareil comme les images, il faudrait alors que la lecture soit possible d'où le plein écran avec une transition en translucidité pour comprendre, comme utilisateur, ce qui ce produit !
