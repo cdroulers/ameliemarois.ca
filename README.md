@@ -23,7 +23,7 @@ Du côté de garder la main dessus ou de laisser aller le code c'est mitigé dan
 
 ## Things to do
 
-- Transparent dialog
+- Transparent dialog (text color white)
 - Remove title
 - On _entire_ dialog click, close it.
 - opacity transition on dialog display

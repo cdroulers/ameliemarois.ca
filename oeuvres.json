@@ -1,8 +1,10 @@
 {
   "titre": "Moi",
+  "description": "<p>Amélie est cool.</p> <p>Ceci est un saut de ligne.</p> <p>Vilem Flusser <em>Ceci sera en italique</em></p>",
   "children": [
     {
       "titre": "photo",
+      "description": "watttt",
       "children": [
         {
           "titre": "Introspection",
