@@ -153,7 +153,7 @@ function registerHandlers() {
 }
 
 function color(d) {
-  if (d.year == "1999") return "#926844";
+  if (d.year == "1999") return "#926870";
   if (d.year == "2003") return "#6f5564";
   if (d.year == "2004") return "#3e5e6f";
   if (d.year == "2005") return "#2e7572";
