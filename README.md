@@ -23,7 +23,9 @@ Du côté de garder la main dessus ou de laisser aller le code c'est mitigé dan
 
 ## Things to do
 
-- Transparent dialog (text color white)
-- Remove title
-- On _entire_ dialog click, close it.
-- opacity transition on dialog display
+- Transparent dialog (text color white) (done)
+- Remove title (done)
+- On _entire_ dialog click, close it. (done)
+- opacity transition on dialog display (Kind of done, sometimes doesn't work on first fade-in)
+- Reuse responsive size thinger. (doesn't work because different simulation!)
+- Image still not properly constrained when viewport small than actual image size.

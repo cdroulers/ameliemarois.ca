@@ -10,11 +10,8 @@
   "editor.insertSpaces": true,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "editor.rulers": [100, 120],
-  "files.associations": {
-    ".babelrc": "json",
-    ".eslintrc": "json"
-  },
+  "editor.rulers": [80, 100],
+  "files.associations": {},
   "javascript.validate.enable": false,
   "eslint.packageManager": "npm",
   "prettier.bracketSpacing": true,
@@ -22,27 +19,5 @@
   "prettier.singleQuote": false,
   "prettier.printWidth": 100,
   "prettier.endOfLine": "auto",
-
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[svg]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "prettier.packageManager": "npm"
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
 }

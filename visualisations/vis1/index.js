@@ -1,4 +1,3 @@
-// Present in HTML.
 var dialog = d3.select("dialog");
 var visualization = document.querySelector("main");
 
@@ -8,7 +7,7 @@ d3.json("oeuvres.json").then(function (json) {
     if (child) {
       visualization.removeChild(child);
     }
-    var size = Math.min(visualization.clientWidth, visualization.clientHeight);
+    var size = Math.min(visualization.clientWidth, visualization.clientHeight) * 1.25;
     child = main(d3, json, size, size, drag(d3));
   }
 
@@ -108,6 +107,8 @@ function hideText() {
   text.style("display", "none");
 }
 
+/// Cette fonction est appelée quand on clique sur un node (cercle).
+/// l'objet `d` contient les données provenant du JSON.
 function showImage(e, d) {
   dialog.attr("open", true);
   var d = d.data;
@@ -115,11 +116,17 @@ function showImage(e, d) {
   if (d.year) {
     title += " (" + d.year + ")";
   }
-  dialog.select("dialog .title").html(title);
+  // Titre quand on affiche l'image
+  //dialog.select("dialog .title").html(title);
   var content = dialog.select("dialog .content").html("");
   if (d.img) {
     content.append("img").attr("src", d.img);
+  } else if (d.description) {
+    content.append("div").attr("class", "description").html(d.description);
   }
+  setTimeout(function () {
+    dialog.attr("class", "fixed open");
+  }, 0);
 }
 
 function drag(d3) {
@@ -145,11 +152,43 @@ function drag(d3) {
   };
 }
 
+/// Enregistre les événements du browsers nécessaire pour faire fonctionner l'app.
 function registerHandlers() {
-  d3.select("dialog a.close").on("click", function (e) {
+  /// Quand on click sur le dialog, je vérifie si le click est sur l'image ou un descendant de
+  /// la description pour éviter de fermer quand on click sur l'image
+  d3.select("dialog").on("click", function (e) {
+    if (!allowClose(e.target)) {
+      return;
+    }
+
     e.preventDefault();
-    dialog.attr("open", null);
+    dialog.attr("class", "fixed");
+    setTimeout(function () {
+      dialog.attr("open", null);
+    }, 500);
   });
+}
+
+function allowClose(el) {
+  if (isChildOfDescription(el)) {
+    return false;
+  }
+
+  return el.nodeName !== "IMG";
+}
+
+/// Une fonction récursive qui vérifie si un élément HTML (`el`) est l'enfant de l'élément
+/// de description
+function isChildOfDescription(el) {
+  if (el.nodeName === "DIV" && el.className === "description") {
+    return true;
+  }
+
+  if (el.parentElement) {
+    return isChildOfDescription(el.parentElement);
+  }
+
+  return false;
 }
 
 function color(d) {
